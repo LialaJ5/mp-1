@@ -11,7 +11,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: coral;
+    background-color: powderblue;
     text-align: center;
     list-style: none;
     padding-left: 0;
@@ -19,10 +19,10 @@ nav ul {
 
 nav li {
     font-size: calc(3px + 3vw);
-    width: 90%;
-    background-color: grey;
-    padding: 2vh 0;
-    margin: 2vh auto;
+    font-family: Electrolize, Helvetica, Arial, sans-serif;
+    width: 100%;
+    border: solid 2px darkblue;
+    padding: 3vh 0;
 }
 
 nav a {
@@ -37,16 +37,14 @@ nav a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: coral;
         list-style: none;
         padding-left: 0;
     }
 
     nav li {
         font-size: calc(2px + 1.5vw);
-        background-color: grey;
         padding: 1% .5%;
-        border-right: solid black 2px;
+        border-right: solid 2px midnightblue;
         margin: 1% .5%;
     }
 
@@ -61,9 +59,15 @@ header {
     display: flex;
     flex-direction: column;
     padding: 0 1vw;
-    background-color: fuchsia;
-    color: darkkhaki;
+    background-color: lavender;
+    color: black;
     font-size: calc(2px + 2vw);
+    font-family: "Rubik Puddles", Helvetica, Arial, sans-serif;
+    border: solid 2px darkblue;
+
+    & p {
+        font-weight: bold;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -78,24 +82,42 @@ main {
     display: flex;
     flex-direction: column;
     width: 70%;
-    background-color: green;
+    background-color: pink;
+    border-bottom: 2px solid hotpink;
 }
 
 main p {
     margin: 0 1vw;
     font-size: calc(2px + 2vw);
+    font-family: Grandstander, Helvetica, Arial, sans-serif;
 }
 
 main h2 {
     text-align: center;
-    font-family: Helvetica, arial, verdana, sans-serif;
+    font-family: Electrolize, Helvetica, Arial, sans-serif;
     font-size: calc(10px + 2vw);
     font-weight: bold;
     margin: 1vw 1vh;
+    border-top: solid 2px hotpink;
+    border-bottom: solid 2px hotpink;
+    color: deeppink;
+}
+
+main ul {
+    font-family: Grandstander, Helvetica, Arial, sans-serif;
+}
+
+main h3 {
+    font-family: Grandstander, Helvetica, Arial, sans-serif;
 }
 
 main img {
-    max-width: 100%
+    max-width: 100%;
+    border: solid 3px deeppink;
+}
+
+#main-content-index-p {
+    border-top: solid 2px hotpink;
 }
 
 @media screen and (max-width: 750px) {
@@ -104,7 +126,6 @@ main img {
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        background-color: green;
     }
 
     main p {
@@ -126,6 +147,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    & p {
+
+        & a {
+            text-decoration: none;
+        }
+    }
 }
 /*footer*/
 
@@ -142,7 +170,7 @@ footer {
     flex-direction: row;
     position: relative;
     width: 100%;
-    background-color: blanchedalmond;
+    background-color: powderblue;
 }
 
 @media screen and (max-width: 750px) {
@@ -177,7 +205,6 @@ footer {
 .work-img {
     width: 30%;
     margin: auto 1vw;
-    background-color: brown;
 }
 
 .work-group {
@@ -186,20 +213,19 @@ footer {
     flex-direction: row;
     justify-content: left;
     margin-bottom: 2vh;
-    background-color: cyan;
 
     & p {
         margin: auto 1vw;
         text-wrap: nowrap;
-        background-color: darkviolet;
-        font-family: Helvetica, arial, verdana, sans-serif;
         font-size: calc(2px + 2vw);
+        border-left: solid 2px deeppink;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
     }
 }
 
 .list-work {
     padding-bottom: 5vh;
-    font-family: Helvetica, arial, verdana, sans-serif;
     font-size: calc(2px + 2vw);
     margin: 1vw 1vh;
 }
@@ -209,7 +235,6 @@ footer {
 .volunteering-img{
     width: 30%;
     margin: auto 1vw;
-    background-color: brown;
 }
 
 .volunteering-group {
@@ -218,20 +243,19 @@ footer {
     flex-direction: row;
     justify-content: left;
     margin-bottom: 2vh;
-    background-color: cyan;
 
     & p {
         margin: auto 1vw;
         text-wrap: nowrap;
-        background-color: darkviolet;
-        font-family: Helvetica, arial, verdana, sans-serif;
         font-size: calc(2px + 2vw);
+        border-left: solid 2px deeppink;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
     }
 }
 
 .volunteering-list {
     padding-bottom: 5vh;
-    font-family: Helvetica, arial, verdana, sans-serif;
     font-size: calc(2px + 2vw);
     margin: 1vw 1vh;
 }
@@ -239,35 +263,36 @@ footer {
 
 /*main in body in education*/
 #education-degree {
-    font-size: calc(1px + 1vw);
-    font-family: Helvetica, arial, verdana, sans-serif;
+    font-size: calc(1px + 1.5vw);
     margin-bottom: 3vh;
 }
 
 #education-class {
     font-size: calc(2px + 2vw);
-    font-family: Helvetica, arial, verdana, sans-serif;
     margin-bottom: 1vh;
+    padding-top: 2vh;
+    border-top: solid 2px deeppink;
 }
 
 #education-info {
     text-align: center;
     margin-top: 7vh;
-    font-family: Helvetica, arial, verdana, sans-serif;
     font-size: calc(2px + 2vw);
+
+    & a {
+        text-decoration: none;
+    }
 }
 
 #education-main-content {
     & h3 {
         margin: 3vh 0 0 1vh;
         font-size: calc(2px + 2vw);
-        font-family: Helvetica, arial, verdana, sans-serif;
-        border-left: solid 2px peru;
+        border-left: solid 2px deeppink;
     }
 
     & li {
         font-size: calc(2px + 2vw);
-        font-family: Helvetica, arial, verdana, sans-serif;
         margin: 1vh 0 1vh 2vw;
 
         & a {
@@ -279,20 +304,21 @@ footer {
 
 /*main in body in projects*/
 .projects-main {
-    margin: 0 auto;
+    margin: 0;
+    justify-content: center;
 
     & h3 {
+        color: navy;
         margin: 1vh 1vw;
         font-size: calc(3px + 3vw);
-        font-family: Helvetica, arial, verdana, sans-serif;
         text-align: center;
     }
 
     & #inputs {
         font-size: calc(2px + 2vw);
-        font-family: Helvetica, arial, verdana, sans-serif;
         display: flex;
         flex-direction: row;
+        justify-content: center;
 
         & .input-group {
             display: flex;
@@ -304,21 +330,29 @@ footer {
 
         & label {
             font-size: calc(2px + 2vw);
-            font-family: Helvetica, arial, verdana, sans-serif;
             color: midnightblue;
-            margin: 2vh 0;
         }
 
         & input {
             font-size: calc(1px + 1vw);
-            font-family: Helvetica, arial, verdana, sans-serif;
             background-color: deepskyblue;
             font-weight: bold;
             color: ivory;
             border: solid 10px royalblue;
-            border-radius: 50%;
-            padding::::ddddddddd
+            padding: 1vh 1vw;
             text-align: center;
+        }
+
+        @media screen and (max-width: 750px) {
+            & label {
+                font-size: calc(3px + 3vw);
+            }
+
+            & input {
+                border: solid 3px royalblue;
+                padding: 2vh 2vw;
+                font-size: calc(2px + 2vw);
+            }
         }
     }
 
@@ -326,23 +360,124 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: brown;
 
         & button {
             font-size: calc(2px + 2vw);
-            font-family: Helvetica, arial, verdana, sans-serif;
             border-radius: 50%;
             border-color: mediumaquamarine;
             background-color: mediumseagreen;
             padding: 1vh 2vw;
             margin: 0.5vh 0.5vw;
-
-            & #button-clear {
-
-            }
+            color: blue;
         }
+    }
+
+    #button-clear {
+        border: solid deepskyblue 2px;
+        background-color: darkseagreen;
+        color: blue;
+    }
+
+    p {
+        font-size: calc(2px + 2vw);
+        text-align: center;
+        border: solid 10px royalblue;
+        background-color: deepskyblue;
+        padding: 2vh 2vw;
+        color: ivory;
+        margin: 0.5vh 0.5vw;
+    }
+
+    @media screen and (max-width: 750px) {
+        p {
+            font-size: calc(2px + 2vw);
+            border: papa
+        }
+    }
+
+    img {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }
 #projects-main-tag {
     background-image: linear-gradient(to right, lightseagreen, dodgerblue);
+    border-bottom: none;
+
+    & h2 {
+        color: midnightblue;
+    }
+    & img {
+        border: none;
+    }
 }
+/*main in body in projects*/
+
+/*main in body in accolades*/
+.accolades-main {
+    display: flex;
+    flex-direction: row;
+    margin: 5vh auto;
+    justify-content: left;
+
+    & p {
+        font-size: calc(2px + 2vw);
+        border-left: solid 2px deeppink;
+        padding: 1vh 1vw;
+        width: 70%;
+    }
+}
+
+#accolades-img-one {
+    max-width: 100%;
+}
+
+#accolades-img-two {
+    max-width: 100%;
+}
+
+.accolades-img {
+    margin: 1vh 1vw;
+    width: 30%;
+}
+/*main in body in accolades*/
+
+/*main in body in references*/
+#references-main {
+    h3 {
+        font-size: calc(2px + 2vw);
+        border-bottom: solid 3px deeppink;
+        width: 90%;
+        padding: 0.5vh 0.5vw;
+        margin: 2.5vh 1vw;
+    }
+
+    .references-name {
+        font-size: calc(1px + 1.5vw);
+        border-left: solid 10px deeppink;
+        margin: 2vh 2vw;
+        padding: 1vh 1vw;
+    }
+}
+/*main in body in references*/
+
+.rubik-puddles-regular {
+    font-family: "Rubik Puddles", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.electrolize-regular {
+    font-family: "Electrolize", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.grandstander-font {
+                   font-family: "Grandstander", serif;
+                   font-optical-sizing: auto;
+                   font-weight: 100;
+                   font-style: normal;
+               }
